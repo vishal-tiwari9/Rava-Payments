@@ -1,0 +1,10 @@
+services:
+
+postgres:
+ image:postgres:16
+ environment:
+  POSTGRES_USER:agentpay
+  POSTGRES_PASSWORD:secret
+  POSTGRES_DB:agentpay_db
+  ports:
+  -"5432:5432"
